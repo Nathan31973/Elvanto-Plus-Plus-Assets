@@ -8,28 +8,34 @@
 
     <!-- 
     Role Priority 
-        Example (Discord) 1-4 1 = highest Priority 
+        Example (Discord) 1-4 lowest number = highest Priority 
         1. {Admin}
         2. {Mod}
         3. {Member}
         4. {Everyone}
     -->
-
+    <!-- Start of Custom Roles -->
     <Role>
     <RoleName>ServiceManager</RoleName>
+        <Priority>1</Priority>
         <Command CommandName="/refresh" Availability="true"/>
         <Button ButtonName="Refresh" Availability="true"/>
     </Role>
     <Role>
     <RoleName>TechDirector</RoleName>
+        <Priority>1</Priority>
         <Command CommandName="/refresh" Availability="true"/>
         <Button ButtonName="Refresh" Availability="true"/>
     </Role>
-    <!--Person the in control of the live chat (Must Have)-->
+    <!-- End of Custom Roles -->
+
+    <!-- Start of Default Elvanto Plus Plus Roles-->
     <Role>
+    <!--Person the in control of the live chat (Must Have)-->
     <RoleName>InControl</RoleName>
-        <Command CommandName="/refresh" Availability="false"/>
-        <Button ButtonName="Refresh" Availability="false"/>
+        <Priority>99</Priority> <!-- 99 = default -->
+        <Command CommandName="/refresh" Availability="true"/>
+        <Button ButtonName="Refresh" Availability="true"/>
         <Command CommandName="@everyone" Availability="true"/>
         <Command CommandName="@role" Availability="true"/>
         <Command CommandName="@Name" Availability="true"/>
@@ -37,12 +43,14 @@
     <!-- Everyone including user without plugin can run commands  (Must Have)-->
     <Role>
     <RoleName>Everyone</RoleName>
+        <Priority>99</Priority> <!-- 99 = default -->
         <Command CommandName="/refresh" Availability="false"/>
         <Button ButtonName="Refresh" Availability="false"/>
         <Command CommandName="@everyone" Availability="true"/>
         <Command CommandName="@role" Availability="true"/>
         <Command CommandName="@Name" Availability="true"/>
     </Role>
+    <!-- End of Default Elvanto Plus Plus Roles-->
 
     <!-- Future config goes here-->
 </Config>
