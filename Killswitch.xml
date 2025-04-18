@@ -1,0 +1,25 @@
+<!-- Kill-switches for Features -->
+<FeatureAvailability>
+    <!-- plugin toggle -->
+    <Plugin Kill="false"/>
+
+    <!-- all chat commands -->
+    <AllCommands Kill="false"/>
+    
+    <!-- Chat Commands  -->
+    <Command Kill="false" CommandName="/refresh"/>
+    <Command Kill="false" CommandName="@Everyone"/>
+    <Command Kill="false" CommandName="@All"/>
+	<Command Kill="false" CommandName="@RoleName"/>
+    <Command Kill="false" CommandName="@PersonName"/>
+
+    <!-- Buttons -->
+    <Button Kill="false" ButtonName="Refresh"/>
+
+    <!-- Toggle Setting -->
+    <SettingToggle Kill="false" ToggleName="HideCommands"/>
+    <SettingToggle Kill="false" ToggleName="Notifications"/>
+
+    <!-- Notfication System-->
+    <Notfication Kill="false"/>
+</FeatureAvailability>
