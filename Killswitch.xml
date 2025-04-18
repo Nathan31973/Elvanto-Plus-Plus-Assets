@@ -1,7 +1,7 @@
 <!-- Kill-switches for Features -->
 <FeatureAvailability>
     <!-- plugin toggle -->
-    <Plugin Kill="true"/>
+    <Plugin Kill="false"/>
 
     <!-- all chat commands -->
     <AllCommands Kill="false"/>
