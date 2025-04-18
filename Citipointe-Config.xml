@@ -30,18 +30,18 @@
     <RoleName>InControl</RoleName>
         <Command CommandName="/refresh" Availability="false"/>
         <Button ButtonName="Refresh" Availability="false"/>
-        <Command CommandName="@everyone" Availability="true">
-        <Command CommandName="@role" Availability="true">
-        <Command CommandName="@Name" Availability="true">
+        <Command CommandName="@everyone" Availability="true"/>
+        <Command CommandName="@role" Availability="true"/>
+        <Command CommandName="@Name" Availability="true"/>
     </Role>
     <!-- Everyone including user without plugin can run commands  (Must Have)-->
     <Role>
     <RoleName>Everyone</RoleName>
         <Command CommandName="/refresh" Availability="false"/>
         <Button ButtonName="Refresh" Availability="false"/>
-        <Command CommandName="@everyone" Availability="true">
-        <Command CommandName="@role" Availability="true">
-        <Command CommandName="@Name" Availability="true">
+        <Command CommandName="@everyone" Availability="true"/>
+        <Command CommandName="@role" Availability="true"/>
+        <Command CommandName="@Name" Availability="true"/>
     </Role>
 
     <!-- Future config goes here-->
