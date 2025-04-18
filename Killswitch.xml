@@ -10,7 +10,7 @@
     <Command Kill="false" CommandName="/refresh"/>
     <Command Kill="false" CommandName="@Everyone"/>
     <Command Kill="false" CommandName="@All"/>
-	<Command Kill="false" CommandName="@RoleName"/>
+    <Command Kill="false" CommandName="@RoleName"/>
     <Command Kill="false" CommandName="@PersonName"/>
 
     <!-- Buttons -->
