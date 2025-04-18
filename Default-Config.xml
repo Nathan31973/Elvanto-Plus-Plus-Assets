@@ -1,0 +1,45 @@
+<!-- Custom Config Setting per church. This Example is design for Citipointe Church -->
+<!-- File Name Should be "{ChurchName}.Config.xml" Church name is grab from the Url {ChurchName}.elvanto.com.au-->
+<Config>
+    <ConfigVersion>01</ConfigVersion>
+
+    <!--Role Permission-->
+    <!-- Commands or button not listed for role will be dissable by default -->
+
+    <!-- 
+    Role Priority 
+        Example (Discord) 1-4 lowest number = highest Priority 
+        1. {Admin}
+        2. {Mod}
+        3. {Member}
+        4. {Everyone}
+    -->
+    <!-- Start of Custom Roles -->
+
+    <!-- End of Custom Roles -->
+
+    <!-- Start of Default Elvanto Plus Plus Roles-->
+    <Role>
+    <!--Person the in control of the live chat (Must Have)-->
+    <RoleName>InControl</RoleName>
+        <Priority>99</Priority> <!-- 99 = default -->
+        <Command CommandName="/refresh" Availability="true"/>
+        <Button ButtonName="Refresh" Availability="true"/>
+        <Command CommandName="@everyone" Availability="true"/>
+        <Command CommandName="@role" Availability="true"/>
+        <Command CommandName="@Name" Availability="true"/>
+    </Role>
+    <!-- Everyone including user without plugin can run commands  (Must Have)-->
+    <Role>
+    <RoleName>Everyone</RoleName>
+        <Priority>99</Priority> <!-- 99 = default -->
+        <Command CommandName="/refresh" Availability="false"/>
+        <Button ButtonName="Refresh" Availability="false"/>
+        <Command CommandName="@everyone" Availability="true"/>
+        <Command CommandName="@role" Availability="true"/>
+        <Command CommandName="@Name" Availability="true"/>
+    </Role>
+    <!-- End of Default Elvanto Plus Plus Roles-->
+
+    <!-- Future config goes here-->
+</Config>
