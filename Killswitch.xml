@@ -7,18 +7,18 @@
     <AllCommands Kill="false"/>
     
     <!-- Chat Commands -->
-    <Command Kill="true" CommandName="/refresh"/>
-    <Command Kill="true" CommandName="@Everyone"/>
+    <Command Kill="false" CommandName="/refresh"/>
+    <Command Kill="false" CommandName="@Everyone"/>
     <Command Kill="false" CommandName="@All"/>
     <Command Kill="false" CommandName="@RoleName"/>
     <Command Kill="false" CommandName="@PersonName"/>
 
     <!-- Buttons -->
-    <Button Kill="true" ButtonName="Refresh"/>
+    <Button Kill="false" ButtonName="Refresh"/>
 
     <!-- Toggle Setting -->
-    <SettingToggle Kill="true" ToggleName="HideCommands"/>
-    <SettingToggle Kill="true" ToggleName="Notification"/>
+    <SettingToggle Kill="false" ToggleName="HideCommands"/>
+    <SettingToggle Kill="false" ToggleName="Notification"/>
 
     <!-- Notfication System-->
     <Notification Kill="false"/>
@@ -26,6 +26,6 @@
     <!-- Debuging Dev Setting -->
     <ConsoleLogging Kill="false"/>
     
-    <!-- Refresh System (Future plans) -->
+    <!-- last runsheet update -->
     <LastRefresh Kill="false"/>
 </FeatureAvailability>
