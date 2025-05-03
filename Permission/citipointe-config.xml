@@ -18,14 +18,21 @@
     <Role>
     <RoleName>ServiceManager</RoleName>
         <Priority>1</Priority>
+        <RoleColor>#fff200</RoleColor>
         <Command CommandName="/refresh" Availability="true"/>
         <Button ButtonName="Refresh" Availability="true"/>
     </Role>
     <Role>
     <RoleName>TechDirector</RoleName>
         <Priority>1</Priority>
+        <RoleColor>#ff0000</RoleColor>
         <Command CommandName="/refresh" Availability="true"/>
         <Button ButtonName="Refresh" Availability="true"/>
+    </Role>
+    <Role>
+    <RoleName>Lighting</RoleName>
+        <Priority>1</Priority>
+        <RoleColor>#00ff55</RoleColor>
     </Role>
     <!-- End of Custom Roles -->
 
@@ -34,6 +41,7 @@
     <!--Person the in control of the live chat (Must Have)-->
     <RoleName>InControl</RoleName>
         <Priority>99</Priority> <!-- 99 = default -->
+        <RoleColor>#ff7c00</RoleColor>
         <Command CommandName="/refresh" Availability="true"/>
         <Button ButtonName="Refresh" Availability="true"/>
     </Role>
@@ -41,6 +49,7 @@
     <Role>
     <RoleName>Everyone</RoleName>
         <Priority>99</Priority> <!-- 99 = default -->
+        <RoleColor>#DDD</RoleColor>
         <Command CommandName="/refresh" Availability="false"/>
         <Button ButtonName="Refresh" Availability="false"/>
         <Command CommandName="@everyone" Availability="true"/>
