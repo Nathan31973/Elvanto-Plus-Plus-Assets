@@ -23,6 +23,7 @@
     <!--Person the in control of the live chat (Must Have)-->
     <RoleName>InControl</RoleName>
         <Priority>99</Priority> <!-- 99 = default -->
+        <RoleColor>#ff7c00</RoleColor>
         <Command CommandName="/refresh" Availability="true"/>
         <Button ButtonName="Refresh" Availability="true"/>
     </Role>
@@ -30,6 +31,7 @@
     <Role>
     <RoleName>Everyone</RoleName>
         <Priority>99</Priority> <!-- 99 = default -->
+        <RoleColor>#DDD</RoleColor>
         <Command CommandName="/refresh" Availability="false"/>
         <Button ButtonName="Refresh" Availability="false"/>
         <Command CommandName="@everyone" Availability="true"/>
