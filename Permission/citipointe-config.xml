@@ -27,12 +27,6 @@
         <Command CommandName="/refresh" Availability="true"/>
         <Button ButtonName="Refresh" Availability="true"/>
     </Role>
-    <Role>
-    <RoleName>Multimedia</RoleName>
-        <Priority>1</Priority>
-        <Command CommandName="/refresh" Availability="true"/>
-        <Button ButtonName="Refresh" Availability="true"/>
-    </Role>
     <!-- End of Custom Roles -->
 
     <!-- Start of Default Elvanto Plus Plus Roles-->
