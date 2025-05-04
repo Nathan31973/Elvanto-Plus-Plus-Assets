@@ -19,6 +19,13 @@
 <RoleColor>#fff200</RoleColor>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
 </Role>
 <Role>
 <RoleName>TechDirector</RoleName>
@@ -26,11 +33,27 @@
 <RoleColor>#ff0000</RoleColor>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
 </Role>
 <Role>
 <RoleName>Lighting</RoleName>
 <Priority>1</Priority>
 <RoleColor>#00ff55</RoleColor>
+<Command CommandName="/refresh" Availability="false"/>
+<Button ButtonName="Refresh" Availability="false"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
 </Role>
 <!--  End of Custom Roles  -->
 <!--  Start of Default Elvanto Plus Plus Roles -->
@@ -42,6 +65,13 @@
 <RoleColor>#ff7c00</RoleColor>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
 </Role>
 <!--  Everyone including user without plugin can run commands  (Must Have) -->
 <Role>
