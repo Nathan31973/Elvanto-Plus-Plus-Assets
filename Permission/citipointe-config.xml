@@ -56,8 +56,8 @@
 <Command CommandName="@role" Availability="true"/>
 <Command CommandName="@Name" Availability="true"/>
 <Command CommandName="@RoleName" Availability="true"/>
-<SettingToggle>ToggleName="Notification" Availability="true"</SettingToggle>
-<SettingToggle>ToggleName="HideCommands" Availability="true"</SettingToggle>
+<SettingToggle ToggleName="Notification" Availability="true"</SettingToggle>
+<SettingToggle ToggleName="HideCommands" Availability="true"</SettingToggle>
 </Role>
 <!--  End of Default Elvanto Plus Plus Roles -->
 <!--  Future config goes here -->
