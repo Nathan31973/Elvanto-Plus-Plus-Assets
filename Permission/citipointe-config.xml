@@ -28,6 +28,20 @@
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
 </Role>
 <Role>
+<RoleName>StageManager</RoleName>
+<Priority>1</Priority>
+<RoleColor>#fff200</RoleColor>
+<Command CommandName="/refresh" Availability="true"/>
+<Button ButtonName="Refresh" Availability="true"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
+</Role>
+<Role>
 <RoleName>TechDirector</RoleName>
 <Priority>1</Priority>
 <RoleColor>#ff0000</RoleColor>
