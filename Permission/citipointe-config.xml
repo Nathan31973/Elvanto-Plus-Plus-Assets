@@ -69,6 +69,62 @@
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
 </Role>
+<Role>
+<RoleName>PlaybackOperator</RoleName>
+<Priority>1</Priority>
+<RoleColour>#00d6ff</RoleColour>
+<Command CommandName="/refresh" Availability="false"/>
+<Button ButtonName="Refresh" Availability="false"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
+</Role>
+<Role>
+<RoleName>KeyGraphicsOperator</RoleName>
+<Priority>1</Priority>
+<RoleColour>#00d6ff</RoleColour>
+<Command CommandName="/refresh" Availability="false"/>
+<Button ButtonName="Refresh" Availability="false"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
+</Role>
+<Role>
+<RoleName>FOH</RoleName>
+<Priority>1</Priority>
+<RoleColour>#ff009f</RoleColour>
+<Command CommandName="/refresh" Availability="false"/>
+<Button ButtonName="Refresh" Availability="false"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
+</Role>
+<Role>
+<RoleName>Monitors</RoleName>
+<Priority>1</Priority>
+<RoleColour>#ff009f</RoleColour>
+<Command CommandName="/refresh" Availability="false"/>
+<Button ButtonName="Refresh" Availability="false"/>
+<Command CommandName="@everyone" Availability="true"/>
+<Command CommandName="@all" Availability="true"/>
+<Command CommandName="@role" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
+<Command CommandName="@RoleName" Availability="true"/>
+<SettingToggle ToggleName="Notification" Availability="true"/>
+<SettingToggle ToggleName="HideCommands" Availability="true"/>
+</Role>
 <!--  End of Custom Roles  -->
 <!--  Start of Default Elvanto Plus Plus Roles -->
 <Role>
