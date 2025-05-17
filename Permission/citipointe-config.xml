@@ -22,7 +22,7 @@
 <Command CommandName="@everyone" Availability="true"/>
 <Command CommandName="@all" Availability="true"/>
 <Command CommandName="@role" Availability="true"/>
-<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
@@ -36,7 +36,7 @@
 <Command CommandName="@everyone" Availability="true"/>
 <Command CommandName="@all" Availability="true"/>
 <Command CommandName="@role" Availability="true"/>
-<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
@@ -50,7 +50,7 @@
 <Command CommandName="@everyone" Availability="true"/>
 <Command CommandName="@all" Availability="true"/>
 <Command CommandName="@role" Availability="true"/>
-<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
@@ -64,7 +64,7 @@
 <Command CommandName="@everyone" Availability="true"/>
 <Command CommandName="@all" Availability="true"/>
 <Command CommandName="@role" Availability="true"/>
-<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
@@ -82,7 +82,7 @@
 <Command CommandName="@everyone" Availability="true"/>
 <Command CommandName="@all" Availability="true"/>
 <Command CommandName="@role" Availability="true"/>
-<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
@@ -98,7 +98,7 @@
 <Command CommandName="@everyone" Availability="true"/>
 <Command CommandName="@all" Availability="true"/>
 <Command CommandName="@role" Availability="true"/>
-<Command CommandName="@Name" Availability="true"/>
+<Command CommandName="@PersonName" Availability="true"/>
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
