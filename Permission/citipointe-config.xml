@@ -30,7 +30,7 @@
 <Role>
 <RoleName>StageManager</RoleName>
 <Priority>1</Priority>
-<RoleColour>#fff200</RoleColour>
+<RoleColour>#d46700</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@everyone" Availability="true"/>
@@ -44,7 +44,7 @@
 <Role>
 <RoleName>TechDirector</RoleName>
 <Priority>1</Priority>
-<RoleColour>#ff0000</RoleColour>
+<RoleColour>#d90000</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@everyone" Availability="true"/>
