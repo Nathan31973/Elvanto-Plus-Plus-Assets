@@ -16,7 +16,7 @@
 <Role>
 <RoleName>ServiceManager</RoleName>
 <Priority>1</Priority>
-<RoleColor>#fff200</RoleColor>
+<RoleColour>#fff200</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@everyone" Availability="true"/>
@@ -30,7 +30,7 @@
 <Role>
 <RoleName>StageManager</RoleName>
 <Priority>1</Priority>
-<RoleColor>#fff200</RoleColor>
+<RoleColour>#fff200</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@everyone" Availability="true"/>
@@ -44,7 +44,7 @@
 <Role>
 <RoleName>TechDirector</RoleName>
 <Priority>1</Priority>
-<RoleColor>#ff0000</RoleColor>
+<RoleColour>#ff0000</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@everyone" Availability="true"/>
@@ -58,7 +58,7 @@
 <Role>
 <RoleName>Lighting</RoleName>
 <Priority>1</Priority>
-<RoleColor>#00ff55</RoleColor>
+<RoleColour>#00ff55</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@everyone" Availability="true"/>
@@ -76,7 +76,7 @@
 <RoleName>InControl</RoleName>
 <Priority>99</Priority>
 <!--  99 = default  -->
-<RoleColor>#ff7c00</RoleColor>
+<RoleColour>#ff7c00</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@everyone" Availability="true"/>
@@ -92,7 +92,7 @@
 <RoleName>Everyone</RoleName>
 <Priority>99</Priority>
 <!--  99 = default  -->
-<RoleColor>#DDD</RoleColor>
+<RoleColour>#DDD</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@everyone" Availability="true"/>
