@@ -26,6 +26,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>StageManager</RoleName>
@@ -40,6 +41,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>TechDirector</RoleName>
@@ -54,6 +56,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>TechAssistant</RoleName>
@@ -68,6 +71,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>Lighting</RoleName>
@@ -97,6 +101,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>KeyGraphicsOperator</RoleName>
@@ -111,6 +116,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>FOH</RoleName>
@@ -125,6 +131,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>Monitors</RoleName>
@@ -139,6 +146,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>VideoSwitcher</RoleName>
@@ -153,6 +161,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>CameraOperator</RoleName>
@@ -167,6 +176,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>LyricsOperator</RoleName>
@@ -181,6 +191,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <!--  End of Custom Roles  -->
 <!--  Start of Default Elvanto Plus Plus Roles -->
@@ -199,6 +210,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <!--  Everyone including user without plugin can run commands  (Must Have) -->
 <Role>
