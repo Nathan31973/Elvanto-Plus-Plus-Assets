@@ -82,6 +82,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>PlaybackOperator</RoleName>
