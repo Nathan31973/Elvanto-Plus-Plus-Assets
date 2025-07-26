@@ -214,6 +214,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <!--  End of Default Elvanto Plus Plus Roles -->
 <!--  Future config goes here -->
