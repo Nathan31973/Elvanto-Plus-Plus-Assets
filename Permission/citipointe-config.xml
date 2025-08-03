@@ -82,7 +82,7 @@
 <Priority>1</Priority>
 <RoleColour>#00ff55</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
-<Command CommandName="/nick" Availability="true"/>
+<Command CommandName="/nick" Availability="false"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -246,5 +246,6 @@
 <!--  End of Default Elvanto Plus Plus Roles -->
 <!--  Future config goes here -->
 </Config>
+
 
 
