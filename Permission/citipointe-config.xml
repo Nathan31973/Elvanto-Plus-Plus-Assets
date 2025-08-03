@@ -18,6 +18,7 @@
 <Priority>1</Priority>
 <RoleColour>#fff200</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -33,6 +34,7 @@
 <Priority>1</Priority>
 <RoleColour>#d46700</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -48,6 +50,7 @@
 <Priority>1</Priority>
 <RoleColour>#d90000</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -63,6 +66,7 @@
 <Priority>1</Priority>
 <RoleColour>#d90000</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -94,6 +98,7 @@
 <Priority>1</Priority>
 <RoleColour>#00d6ff</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -109,6 +114,7 @@
 <Priority>1</Priority>
 <RoleColour>#00d6ff</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -124,6 +130,7 @@
 <Priority>1</Priority>
 <RoleColour>#ff009f</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -139,6 +146,7 @@
 <Priority>1</Priority>
 <RoleColour>#ff009f</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -154,6 +162,7 @@
 <Priority>1</Priority>
 <RoleColour>#e309d8</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -169,6 +178,7 @@
 <Priority>1</Priority>
 <RoleColour>#e309d8</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -184,6 +194,7 @@
 <Priority>1</Priority>
 <RoleColour>#00d4a2</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -203,6 +214,7 @@
 <!--  99 = default  -->
 <RoleColour>#ff7c00</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -220,6 +232,7 @@
 <!--  99 = default  -->
 <RoleColour>#DDD</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -233,4 +246,5 @@
 <!--  End of Default Elvanto Plus Plus Roles -->
 <!--  Future config goes here -->
 </Config>
+
 
