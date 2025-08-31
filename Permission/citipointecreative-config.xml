@@ -18,6 +18,7 @@
 <Priority>1</Priority>
 <RoleColour>#fff200</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -26,12 +27,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>StageManager</RoleName>
 <Priority>1</Priority>
 <RoleColour>#d46700</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -40,12 +43,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>TechDirector</RoleName>
 <Priority>1</Priority>
 <RoleColour>#d90000</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -54,12 +59,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>TechAssistant</RoleName>
 <Priority>1</Priority>
 <RoleColour>#d90000</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -68,12 +75,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>Lighting</RoleName>
 <Priority>1</Priority>
 <RoleColour>#00ff55</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -82,12 +91,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>PlaybackOperator</RoleName>
 <Priority>1</Priority>
 <RoleColour>#00d6ff</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -96,12 +107,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>KeyGraphicsOperator</RoleName>
 <Priority>1</Priority>
 <RoleColour>#00d6ff</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -110,12 +123,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>FOH</RoleName>
 <Priority>1</Priority>
 <RoleColour>#ff009f</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -124,12 +139,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>Monitors</RoleName>
 <Priority>1</Priority>
 <RoleColour>#ff009f</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -138,12 +155,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>VideoSwitcher</RoleName>
 <Priority>1</Priority>
 <RoleColour>#e309d8</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -152,12 +171,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>CameraOperator</RoleName>
 <Priority>1</Priority>
 <RoleColour>#e309d8</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -166,12 +187,14 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <Role>
 <RoleName>LyricsOperator</RoleName>
 <Priority>1</Priority>
 <RoleColour>#00d4a2</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -180,6 +203,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <!--  End of Custom Roles  -->
 <!--  Start of Default Elvanto Plus Plus Roles -->
@@ -190,6 +214,7 @@
 <!--  99 = default  -->
 <RoleColour>#ff7c00</RoleColour>
 <Command CommandName="/refresh" Availability="true"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="true"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -198,6 +223,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <!--  Everyone including user without plugin can run commands  (Must Have) -->
 <Role>
@@ -206,6 +232,7 @@
 <!--  99 = default  -->
 <RoleColour>#DDD</RoleColour>
 <Command CommandName="/refresh" Availability="false"/>
+<Command CommandName="/nick" Availability="true"/>
 <Button ButtonName="Refresh" Availability="false"/>
 <Command CommandName="@Everyone" Availability="true"/>
 <Command CommandName="@All" Availability="true"/>
@@ -214,6 +241,7 @@
 <Command CommandName="@RoleName" Availability="true"/>
 <SettingToggle ToggleName="Notification" Availability="true"/>
 <SettingToggle ToggleName="HideCommands" Availability="true"/>
+<SettingToggle ToggleName="HideGifPreviews" Availability="true"/>
 </Role>
 <!--  End of Default Elvanto Plus Plus Roles -->
 <!--  Future config goes here -->
