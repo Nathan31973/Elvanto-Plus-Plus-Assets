@@ -1,8 +1,8 @@
-name: Index Custom Content
+name: Update Emoji Index
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main" ]
     paths:
       - 'Emoji/**'
 
@@ -11,29 +11,48 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate emoji-index.json
+      - name: Generate emoji-index.json (robust Node.js version)
         run: |
-          echo '{' > emoji-index.json
-          echo '  "lastUpdated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'",' >> emoji-index.json
-          echo '  "emojis": {' >> emoji-index.json
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
 
-          # Scan Emoji folder (including subfolders if you ever add them)
-          find Emoji -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" \) | sort | while read -r file; do
-            slug=$(basename "$file" | sed 's/\.[^.]*$//' | tr '[:upper:]' '[:lower:]')
-            url="https://raw.githubusercontent.com/${{ github.repository }}/main/${file}"
-            echo "    \"${slug}\": \"${url}\"," >> emoji-index.json
-          done
+            const emojiDir = "Emoji";
+            const indexFile = "emoji-index.json";
 
-          # Clean up trailing comma and close JSON
-          sed -i '$ s/,$//' emoji-index.json 2>/dev/null || true
-          echo '  }' >> emoji-index.json
-          echo '}' >> emoji-index.json
+            const emojis = {};
+            function scan(dir) {
+              const files = fs.readdirSync(dir);
+              for (const file of files) {
+                const fullPath = path.join(dir, file);
+                if (fs.statSync(fullPath).isDirectory()) {
+                  scan(fullPath);
+                } else if (/\.(png|jpe?g|gif)$/i.test(file)) {
+                  const slug = file.replace(/\.[^.]+$/, "").toLowerCase();
+                  const url = `https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/main/${fullPath}`;
+                  emojis[slug] = url;
+                }
+              }
+            }
+
+            scan(emojiDir);
+
+            const data = {
+              lastUpdated: new Date().toISOString(),
+              emojis: emojis
+            };
+
+            fs.writeFileSync(indexFile, JSON.stringify(data, null, 2));
+            console.log(`Generated emoji-index.json with ${Object.keys(emojis).length} emojis`);
+          '
 
       - name: Commit emoji-index.json if changed
-        uses: Nathan31973/Elvanto-Plus-Plus-Assets@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update emoji index"
           file_pattern: emoji-index.json
+          branch: main
