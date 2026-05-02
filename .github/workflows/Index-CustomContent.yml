@@ -1,58 +1,72 @@
-name: Update Emoji Index
+name: Update Asset Indexes
 
 on:
   push:
     branches: [ "main" ]
     paths:
       - 'Emoji/**'
+      - 'Gifs/**'
+  workflow_dispatch:
 
 jobs:
-  update-emoji-index:
+  update-indexes:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Generate emoji-index.json (robust Node.js version)
+      - name: Generate Indexes
         run: |
           node -e '
             const fs = require("fs");
             const path = require("path");
 
-            const emojiDir = "Emoji";
-            const indexFile = "emoji-index.json";
+            const repo = process.env.GITHUB_REPOSITORY;
 
-            const emojis = {};
-            function scan(dir) {
-              const files = fs.readdirSync(dir);
-              for (const file of files) {
-                const fullPath = path.join(dir, file);
-                if (fs.statSync(fullPath).isDirectory()) {
-                  scan(fullPath);
-                } else if (/\.(png|jpe?g|gif)$/i.test(file)) {
-                  const slug = file.replace(/\.[^.]+$/, "").toLowerCase();
-                  const url = `https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/main/${fullPath}`;
-                  emojis[slug] = url;
+            function generateIndex(sourceDir, outputFile) {
+              if (!fs.existsSync(sourceDir)) {
+                console.log(`Skipping ${sourceDir}: Directory not found.`);
+                return;
+              }
+
+              const assets = {};
+              function scan(dir) {
+                const files = fs.readdirSync(dir);
+                for (const file of files) {
+                  const fullPath = path.join(dir, file);
+                  if (fs.statSync(fullPath).isDirectory()) {
+                    scan(fullPath);
+                  } else if (/\.(png|jpe?g|gif|webp)$/i.test(file)) {
+                    const slug = file.replace(/\.[^.]+$/, "").toLowerCase();
+                    const githubPath = fullPath.split(path.sep).join("/");
+                    assets[slug] = `https://raw.githubusercontent.com/${repo}/main/${githubPath}`;
+                  }
                 }
               }
+
+              scan(sourceDir);
+
+              const data = {
+                lastUpdated: new Date().toISOString(),
+                total: Object.keys(assets).length,
+                assets: assets
+              };
+
+              fs.writeFileSync(outputFile, JSON.stringify(data, null, 2));
+              console.log(`Generated ${outputFile} with ${data.total} items.`);
             }
 
-            scan(emojiDir);
-
-            const data = {
-              lastUpdated: new Date().toISOString(),
-              emojis: emojis
-            };
-
-            fs.writeFileSync(indexFile, JSON.stringify(data, null, 2));
-            console.log(`Generated emoji-index.json with ${Object.keys(emojis).length} emojis`);
+            // Run for both directories
+            generateIndex("Emoji", "emoji-index.json");
+            generateIndex("Gifs", "gif-index.json");
           '
 
-      - name: Commit emoji-index.json if changed
-        uses: stefanzweifel/git-auto-commit-action@v7
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update emoji index"
-          file_pattern: emoji-index.json
-          branch: main
+          commit_message: "chore: update asset indexes [skip ci]"
+          # This pattern catches any JSON file in the root
+          file_pattern: '*-index.json'
