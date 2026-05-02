@@ -1,0 +1,39 @@
+name: Index Custom Content
+
+on:
+  push:
+    branches: [ "main", "master" ]
+    paths:
+      - 'Emoji/**'
+
+jobs:
+  update-emoji-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate emoji-index.json
+        run: |
+          echo '{' > emoji-index.json
+          echo '  "lastUpdated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'",' >> emoji-index.json
+          echo '  "emojis": {' >> emoji-index.json
+
+          # Scan Emoji folder (including subfolders if you ever add them)
+          find Emoji -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" \) | sort | while read -r file; do
+            slug=$(basename "$file" | sed 's/\.[^.]*$//' | tr '[:upper:]' '[:lower:]')
+            url="https://raw.githubusercontent.com/${{ github.repository }}/main/${file}"
+            echo "    \"${slug}\": \"${url}\"," >> emoji-index.json
+          done
+
+          # Clean up trailing comma and close JSON
+          sed -i '$ s/,$//' emoji-index.json 2>/dev/null || true
+          echo '  }' >> emoji-index.json
+          echo '}' >> emoji-index.json
+
+      - name: Commit emoji-index.json if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update emoji index"
+          file_pattern: emoji-index.json
