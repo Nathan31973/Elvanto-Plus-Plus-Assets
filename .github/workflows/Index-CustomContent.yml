@@ -33,7 +33,7 @@ jobs:
           echo '}' >> emoji-index.json
 
       - name: Commit emoji-index.json if changed
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: Nathan31973/Elvanto-Plus-Plus-Assets@v5
         with:
           commit_message: "chore: update emoji index"
           file_pattern: emoji-index.json
